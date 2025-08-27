@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CET N°1 General Roca</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="LogoG.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <!-- === BANNER DE BIENVENIDA === -->
+  <div class="welcome-banner">
+    <!-- HEADER -->
+    <header class="hero">
+      <div class="header-content">
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="ciclo-basico.html">CICLO BASICO</a></li>
+            <li>
+              <a href="#">CICLO SUPERIOR</a>
+              <ul class="submenu">
+                <li><a href="informatica.html">INFORMATICA</a></li>
+                <li><a href="mecanica.html">MECANICA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- NUEVO BANNER CON DISEÑO PROMOCIONAL -->
+    <div class="promotional-banner">
+      <div class="banner-content">
+        <div class="logo-section">
+          <img src="LogoTT.png" alt="Escudo CET N°1" class="banner-shield" />
+        </div>
+        <div class="text-section">
+          <div class="banner-text-content">
+            <h1 class="banner-main-title">CET N°1</h1>
+            <p class="banner-subtitle">Centro de Educación Técnica</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- === SECCIÓN BIENVENIDA === -->
+    <section class="bienvenida">
+      <div class="bienvenida-content">
+        <h2 class="info-titulo">¡Bienvenid@ al CET N°1!</h2>
+        <p class="info-parrafo">Nos alegra que estés visitando nuestra página. Acá vas a encontrar información sobre nuestras especialidades, historia, ciclo básico y las experiencias del CET N°1 de General Roca. ¡Explorá y conocenos!</p>
+      </div>
+    </section>
+
+    <!-- === CARRUSEL DE IMÁGENES === -->
+    <section class="carrusel-container">
+      <div class="carrusel-content">
+        <div class="carrusel-slides">
+          <div class="carrusel-slide">
+            <img src="chatbot.png" alt="Taller 1" />
+            <div class="carrusel-slide-content">
+              <h2>Nuestro Chatbot esta disponible</h2>
+              <p>¡Colsunta cualquier duda con él!</p>
+            </div>
+          </div>
+          <div class="carrusel-slide">
+            <img src="CET1.jpg" alt="Actividades Estudiantiles" />
+            <div class="carrusel-slide-content">
+              <h2>Actividades Estudiantiles</h2>
+              <p>Participá en proyectos, competencias y eventos educativos</p>
+            </div>
+          </div>
+          <div class="carrusel-slide">
+            <img src="Taller1.jpg" alt="Taller de Informática" />
+            <div class="carrusel-slide-content">
+              <h2>Taller de Informática</h2>
+              <p>Equipamiento moderno para el desarrollo de software y sistemas</p>
+            </div>
+          </div>
+          <div class="carrusel-slide">
+            <img src="entrada.jpg" alt="Entrada Principal" />
+            <div class="carrusel-slide-content">
+              <h2>Entrada Principal</h2>
+              <p>Bienvenidos al CET N°1, donde comienza tu futuro profesional</p>
+            </div>
+          </div>
+          <div class="carrusel-slide">
+            <img src="algo.jpg" alt="Laboratorio de Prácticas" />
+            <div class="carrusel-slide-content">
+              <h2>Laboratorio de Prácticas</h2>
+              <p>Espacios equipados para el aprendizaje experimental</p>
+            </div>
+          </div>
+          <div class="carrusel-slide">
+            <img src="impresoras.jpg" alt="Tecnología 3D" />
+            <div class="carrusel-slide-content">
+              <h2>Tecnología 3D</h2>
+              <p>Impresoras 3D y equipamiento de última generación</p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carrusel-btn prev" onclick="cambiarSlide(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carrusel-btn next" onclick="cambiarSlide(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="carrusel-indicators">
+          <span class="carrusel-indicator active" onclick="slideActual(0)"></span>
+          <span class="carrusel-indicator" onclick="slideActual(1)"></span>
+          <span class="carrusel-indicator" onclick="slideActual(2)"></span>
+          <span class="carrusel-indicator" onclick="slideActual(3)"></span>
+          <span class="carrusel-indicator" onclick="slideActual(4)"></span>
+          <span class="carrusel-indicator" onclick="slideActual(5)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- === SECCIÓN NOVEDADES === -->
+    <section class="novedades">
+      <div class="novedades-content">
+        <h2>Novedades</h2>
+        <div class="novedades-grid">
+          <div class="novedad">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCet01GeneralRocaRN%2Fposts%2Fpfbid0SMUmwDiYqNfdbFkqZyv1D95FwTNFye7hZNj3y6fv41c1bKp8ttxhtArXnpr3iJRWl&show_text=true&width=500" width="500" height="304" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div class="novedad">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCet01GeneralRocaRN%2Fposts%2Fpfbid021T4mVWhAnVoBCVf5SE9GfGEHGr1NDe2U7sDZNdhXiQWX7mKZokgzLKcf8g2cHD1Ql&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div class="novedad">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCet01GeneralRocaRN%2Fposts%2Fpfbid01AMhPj7pBDpa3r6cmxAVpx84XMqhjmYL1NfdWZ5QzCm1bmS9vNQBi5rhUPYc6pPCl&show_text=true&width=500" width="500" height="773" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === SECCIÓN DESTACADA CICLOS === -->
+    <section class="ciclos-destacados">
+      <div class="ciclos-contenedor">
+        <div class="ciclo-card">
+                      <h2>Ciclo Básico</h2>
+          <p>Formación integral para estudiantes de primer a tercer año</p>
+          <a href="ciclo-basico.html" class="ciclo-btn">VER MAS</a>
+        </div>
+        <div class="ciclo-card">
+                      <h2>Ciclo Superior</h2>
+          <p>Especialización técnica en Informática y Mecánica</p>
+          <a href="informatica.html" class="ciclo-btn">VER MAS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === SECCIÓN MAPA === -->
+    <section class="mapa-container">
+      <div class="mapa-content">
+        <div class="mapa-header">
+          <h2>Ubicación del CET N°1</h2>
+          <p class="mapa-subtitle">Encuéntranos en General Roca</p>
+        </div>
+        
+        <div class="mapa-wrapper">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1otJQuExPZIHESNU07PiMdtIcUBbAisI&ehbc=2E312F" 
+                  class="google-maps-iframe"
+                  title="Ubicación del CET N°1 General Roca"
+                  aria-label="Mapa interactivo del CET N°1">
+          </iframe>
+        </div>
+        
+        <div class="mapa-footer">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 
+            <strong>Direccion:</strong> La Pampa 1020, R8332 Gral. Roca, Río Negro
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> 
+            <strong>Teléfono:</strong> +54 9 298 442-1053
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- === FOOTER === -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo-info">
+        <img src="../Imagenes/LogoTT.png" alt="Logo CET N°1" class="footer-logo" />
+        <div class="footer-texto">
+          <p class="titulo-escuela">Centro de Educación Técnica</p>
+          <p class="nombre-escuela">CET N°1</p>
+          <p class="footer-contacto">
+            <i class="fas fa-phone"></i> +54 9 298 442-1234<br />
+            <i class="fas fa-envelope"></i> cet1generalroca@gmail.com
+          </p>
+          <div class="footer-redes">
+            <a href="https://www.facebook.com/Cet01GeneralRocaRN" target="_blank" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://www.instagram.com/cet1roca/" target="_blank" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript para el Carrusel -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carrusel-slide');
+    const indicators = document.querySelectorAll('.carrusel-indicator');
+    const totalSlides = slides.length;
+
+    function mostrarSlide(n) {
+      slideIndex = n;
+      
+      // Ocultar todos los slides
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+      });
+      
+      // Remover clase active de todos los indicadores
+      indicators.forEach(indicator => {
+        indicator.classList.remove('active');
+      });
+      
+      // Mostrar el slide actual
+      if (slides[slideIndex]) {
+        slides[slideIndex].classList.add('active');
+      }
+      
+      // Activar el indicador correspondiente
+      if (indicators[slideIndex]) {
+        indicators[slideIndex].classList.add('active');
+      }
+    }
+
+    function cambiarSlide(direction) {
+      slideIndex += direction;
+      
+      if (slideIndex >= totalSlides) {
+        slideIndex = 0;
+      } else if (slideIndex < 0) {
+        slideIndex = totalSlides - 1;
+      }
+      
+      mostrarSlide(slideIndex);
+    }
+
+    function slideActual(n) {
+      mostrarSlide(n);
+    }
+
+    // Auto-play del carrusel
+    function autoPlay() {
+      cambiarSlide(1);
+    }
+
+    // Inicializar el carrusel
+    document.addEventListener('DOMContentLoaded', function() {
+      mostrarSlide(0);
+      
+      // Auto-play cada 5 segundos
+      setInterval(autoPlay, 5000);
+    });
+  </script>
+
+  <!-- Contenedor con aureola para el chatbot -->
+  <div class="chatbot-container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Voiceflow Chat Widget -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '683d0d951e5229bfd2711dbb' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+          
+          // Ajustar la aureola al tamaño del botón de Voiceflow
+          function adjustAureolaToVoiceflow() {
+            const voiceflowButton = document.querySelector('[data-testid="vf-widget-button"]') || 
+                                   document.querySelector('.vf-widget-button') ||
+                                   document.querySelector('[class*="voiceflow"]') ||
+                                   document.querySelector('[class*="vf-"]');
+            
+            const aureolaContainer = document.querySelector('.chatbot-container');
+            
+            if (voiceflowButton && aureolaContainer) {
+              const buttonRect = voiceflowButton.getBoundingClientRect();
+              const buttonSize = Math.max(buttonRect.width, buttonRect.height);
+              const aureolaSize = buttonSize + 10; // 5px extra en cada lado
+              
+              // Calcular el centro del botón
+              const buttonCenterX = buttonRect.left + buttonRect.width / 2;
+              const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+              
+              // Calcular la posición de la aureola para que esté centrada
+              const aureolaLeft = buttonCenterX - aureolaSize / 2;
+              const aureolaTop = buttonCenterY - aureolaSize / 2;
+              
+              // Ajustar posición y tamaño de la aureola
+              aureolaContainer.style.width = aureolaSize + 'px';
+              aureolaContainer.style.height = aureolaSize + 'px';
+              aureolaContainer.style.left = aureolaLeft + 'px';
+              aureolaContainer.style.top = aureolaTop + 'px';
+              aureolaContainer.style.bottom = 'auto';
+              aureolaContainer.style.right = 'auto';
+              
+              console.log('Aureola centrada con el botón de Voiceflow:', buttonSize, 'px');
+            }
+          }
+          
+          // Intentar ajustar la aureola después de que se cargue el widget
+          setTimeout(adjustAureolaToVoiceflow, 2000);
+          setTimeout(adjustAureolaToVoiceflow, 3000);
+          setTimeout(adjustAureolaToVoiceflow, 4000);
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+
+
+</body>
+</html>
